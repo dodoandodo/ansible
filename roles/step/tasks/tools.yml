@@ -1,0 +1,11 @@
+---
+
+- name: (tracing) install tracing tool.
+  yum:
+    name: ['bcc', 'bcc-tools', sysstat]
+    state: present
+
+- name: (tracing) git pull tracing training script.
+  git:
+    repo: https://github.com/iovisor/bcc.git
+    dest: /usr/local/src/

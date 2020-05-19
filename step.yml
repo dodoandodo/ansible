@@ -1,0 +1,6 @@
+---
+
+- name: step
+  hosts: step
+  roles: 
+    - step
